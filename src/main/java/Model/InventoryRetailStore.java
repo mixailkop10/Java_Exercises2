@@ -1,8 +1,16 @@
 package Model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 
 public class InventoryRetailStore implements IStore{
     private List<Product> productListBeforeSell = new ArrayList<>();
