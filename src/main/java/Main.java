@@ -1,7 +1,6 @@
 import Model.Account;
+import Model.StoreAccount;
 import Service.Ui;
-
-import java.util.Scanner;
 
 public class Main {
 
@@ -14,5 +13,13 @@ public class Main {
         do{
             ui.menu();
         }while (ui.tester(account));
+
+        StoreAccount store = new StoreAccount("mixalis", "basic");
+        store.setNumberOfTransactions(0);
+        store.setBalance(0);
+
+        do{
+            ui.menu2();
+        }while (ui.tester(store));
     }
 }
